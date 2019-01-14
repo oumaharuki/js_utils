@@ -1,50 +1,48 @@
-# ### utils
+3. # ### utils
 
-前端开发中用到的一些方法，封装好以后只要导入就可以很快速使用。兼容到ie678.
+   前端开发中用到的一些方法，封装好以后只要导入就可以很快速使用。兼容到ie678.
 
-### 使用
+   ### 使用
 
-```javascript
-<script src="js/utils.js"></script>
-```
+   ```javascript
+   <script src="js/utils.js"></script>
+   ```
 
+   ### 方法
 
+   1. getCss
 
-### 方法
+   ```javascript
+   getCss(ele, attr)
+   ```
 
-1. getCss
+   ele:需要获取的元素节点
 
-```javascript
-getCss(ele, attr)
-```
+   attr：需要获取的属性
 
-ele:需要获取的元素节点
-
-attr：需要获取的属性
-
-```javascript
-var height=utils.getCss(Odiv,"height");
-```
+   ```javascript
+   var height=utils.getCss(Odiv,"height");
+   ```
 
 
 
-2. setCss
+   2. setCss
 
-```
-setCss(ele, attr, value)
-```
+   ```
+   setCss(ele, attr, value)
+   ```
 
-ele:需要设置的元素节点
+   ele:需要设置的元素节点
 
-attr：需要设置的属性
+   attr：需要设置的属性
 
-value：需要设置的值
+   value：需要设置的值
 
-```javascript
- utils.css(Odiv,"background","blue");
-```
+   ```javascript
+   utils.css(Odiv,"background","blue");
+   ```
 
-3. setGroupCss
+   3. setGroupCss
 
    ```
    setGroupCss(ele, options)
@@ -56,8 +54,8 @@ value：需要设置的值
 
    ```javascript
    utils.setGroupCss(Odiv,{
-       "width":500,
-       "background":"red"
+   	"width":500,
+   	"background":"red"
    });
    ```
 
@@ -69,7 +67,7 @@ value：需要设置的值
 
    ```javascript
    utils.css(Odiv,{
-       "width":500,
-       "background":"red"
+   	"width":500,
+   	"background":"red"
    });
    ```
