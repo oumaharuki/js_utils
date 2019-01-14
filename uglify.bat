@@ -1,0 +1,1 @@
+uglifyjs js/utils.js  -m -o dist/utils.min.js
