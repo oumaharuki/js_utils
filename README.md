@@ -24,7 +24,6 @@ attr：需要获取的属性
 var height=utils.getCss(Odiv,"height");
 ```
 
-
 2. setCss
 
 ```
@@ -58,7 +57,7 @@ utils.setGroupCss(Odiv,{
 });
 ```
 
-4.css
+4. css
 
 getCss or setCss or setGroupCss
 
@@ -70,3 +69,12 @@ utils.css(Odiv,{
 	"background":"red"
 });
 ```
+
+5. offset
+
+获取元素到body的偏移,得到的是一个obj：{top: 0, left: 0}
+
+```
+var offset=utils.offset(Odiv);
+```
+

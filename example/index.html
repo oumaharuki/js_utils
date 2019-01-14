@@ -12,19 +12,20 @@
     </style>
 </head>
 <body>
-<divid="div">
+<div id="div">
 
 </div>
 <script src="../js/utils.js"></script>
 <script>
     var Odiv=document.getElementById("div");
     var height=utils.getCss(Odiv,"height");
-    console.log(height);
     utils.css(Odiv,"background","blue");
     utils.css(Odiv,{
         "width":500,
         "background":"red"
     });
+    var offset=utils.offset(Odiv);
+    console.log(offset);
 </script>
 </body>
 </html>
