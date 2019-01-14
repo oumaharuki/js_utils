@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div{
+            width: 200px;
+            height: 300px;
+            background: red
+        }
+    </style>
+</head>
+<body>
+<divid="div">
+
+</div>
+<script src="../js/utils.js"></script>
+<script>
+    var Odiv=document.getElementById("div");
+    var height=utils.getCss(Odiv,"height");
+    console.log(height);
+    utils.css(Odiv,"background","blue");
+    utils.css(Odiv,{
+        "width":500,
+        "background":"red"
+    });
+</script>
+</body>
+</html>
