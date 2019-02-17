@@ -78,3 +78,14 @@ utils.css(Odiv,{
 var offset=utils.offset(Odiv);
 ```
 
+## string method
+1.formatTime
+模板：{0}年{1}月{2}日 {3}时{4}分{5}秒
+将时间格式化
+```javascript
+var str="2018/2/16 21:40:5";
+str.formatTime();//"2018年02月16日 21时40分05秒"
+//自定义模板
+str.formatTime("{1}/{2} {3}:{4}");//"02/16 21:40"
+```
+
